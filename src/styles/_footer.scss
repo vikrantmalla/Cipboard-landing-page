@@ -1,0 +1,86 @@
+.footer {
+    background-color: $colorFooterBg;
+    margin-top: 5rem;
+    @include flex(column, center);
+    gap: 1.5rem;
+    .footer_left {
+        @include flex(column, center);
+        img {
+            width: 3.7rem;
+            margin-top: 3rem;
+        }
+        .footer_menu {
+            display: grid;
+            grid-template-rows: 1fr;
+            gap: 2rem;
+            margin-top: 2rem;
+            list-style: none;
+            text-align: center;
+            ul {
+                li {
+                    a {
+                        text-decoration: none;
+                        color: $colorFooterText;
+                        font-size: 1.1rem;
+                        cursor: pointer;
+                        &:hover {
+                            color: $colorStrongCyan;
+                        }
+                    }
+                    &:nth-child(1) {
+                        margin-bottom: 2rem;
+                    }
+                }
+            }
+            .footer_option {
+                list-style: none;
+            }
+        }
+    }
+    .social_media {
+        @include flex(row, center);
+        list-style: none;
+        gap: 2.5rem;
+        margin-bottom: 4rem;
+        a {
+            img {
+                width: 1.5rem;
+                &:hover {
+                    cursor: pointer;
+                    color: white;
+                    filter: opacity(0.4) drop-shadow(0 0 0 $colorStrongCyan);
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 62em) {
+    .footer {
+        @include flex(row, space-between);
+        padding: 2rem 8rem;
+        .footer_left {
+            @include flex(row, space-between);
+            align-items: flex-start;
+            gap: 8rem;
+            .footer_menu {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 2rem;
+                margin-top: 0;
+                list-style: none;
+                align-items: left;
+                text-align: left;
+                .footer_option {
+                    a {
+                        font-size: 1.3rem;
+                    }
+                }
+            }
+        }
+        .social_media {
+            @include flex(row, center);
+            margin-bottom: 0;
+        }
+    }
+}

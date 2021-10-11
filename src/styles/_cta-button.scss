@@ -1,0 +1,45 @@
+.cta-button {
+    width: 100%;
+    @include flex(column, center);
+    .ios {
+        @include button ($colorStrongCyan, $colorBorderCyan, $colorBoxShadowIos);
+        margin-bottom: 1rem;
+    }
+    .mac {
+        @include button ($colorLightBlue, $colorBorderBlue, $colorBoxShadowMac);
+    }
+}
+
+@media (min-width: 43em) {
+    .cta-button {
+        width: 70%;
+    }
+}
+
+@media (min-width: 62em) {
+    .cta-button {
+        @include flex(row, center);
+        width: 40%;
+        gap: 1.5rem;
+        margin-bottom: 9rem;
+        .ios {
+            font-size: 1rem;
+            margin: 0;
+        }
+        .mac {
+            font-size: 1em;
+        }
+    }
+}
+
+@media (min-width: 87em) {
+    .cta-button {
+        padding: 2rem;
+        .ios {
+            font-size: 1.2rem;
+        }
+        .mac {
+            font-size: 1.2rem;
+        }
+    }
+}

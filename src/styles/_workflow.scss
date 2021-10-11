@@ -1,0 +1,81 @@
+.workflow {
+    padding: 0 2rem;
+    margin: 6rem 0 6rem 0;
+    text-align: center;
+    .workflow-desc {
+        h2 {
+            @include title(1.5rem);
+            margin-bottom: 1rem;
+        }
+        p {
+            @include para(1rem);
+            margin-bottom: .8rem;
+        }
+    }
+    .workflow-containter {
+        display: grid;
+        grid-template-rows: 1fr;
+        margin-top: 4rem;
+        .feature {
+            margin-bottom: 4rem;
+            img {
+                margin-bottom: 1rem;
+            }
+            h2 {
+                @include title(1.5rem);
+                margin-bottom: 1rem;
+            }
+            p {
+                @include para(1rem);
+                margin-bottom: .8rem;
+            }
+        }
+    }
+}
+
+.brand {
+    @include flex(column, center);
+    gap: 4rem;
+}
+
+@media (min-width: 43em) {
+    .workflow-containter {
+        padding: 0 8rem;
+    }
+}
+
+@media (min-width: 62em) {
+    .workflow {
+        .workflow-desc {
+            h2 {
+                @include title(2.2rem);
+            }
+        }
+        .workflow-containter {
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+            padding: 0 8rem;
+        }
+    }
+    .brand {
+        @include flex(row, center);
+        gap: 2rem;
+        padding: 0 8rem;
+    }
+}
+
+@media (min-width: 87em) {
+    .workflow {
+        .workflow-desc {
+            h2 {
+                @include title(2.5rem);
+            }
+            p {
+                @include para(1.2rem);
+            }
+        }
+        .workflow-containter {
+            padding: 0 2rem;
+        }
+    }
+}

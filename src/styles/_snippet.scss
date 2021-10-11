@@ -1,0 +1,97 @@
+.snippet {
+    padding: 0 2rem;
+    margin-top: 5rem;
+    .snippet-desc {
+        margin-bottom: 4rem;
+        text-align: center;
+        h2 {
+            @include title(1.5rem);
+            margin-bottom: 1rem;
+        }
+        p {
+            @include para(1rem);
+            margin-bottom: .8rem;
+        }
+    }
+    .option-containter {
+        margin-top: 2rem;
+        @include flex(column, center);
+        .option-details {
+            margin-top: 2.5rem;
+            .option {
+                margin-bottom: 2rem;
+                text-align: center;
+                h2 {
+                    @include title(1.5rem);
+                    margin-bottom: 1rem;
+                }
+                p {
+                    @include para(1rem);
+                    margin-bottom: .8rem;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 43em) {
+    .snippet {
+        .snippet-desc {
+            padding: 0 8rem;
+        }
+        .option-containter {
+            padding: 0 8rem;
+        }
+    }
+}
+
+@media (min-width: 62em) {
+    .snippet {
+        padding: 0;
+        .snippet-desc {
+            padding: 0 10rem;
+            p {
+                padding: 0 13rem;
+            }
+        }
+        .option-containter {
+            @include flex(row, space-between);
+            gap: 3rem;
+            margin-left: -200px;
+            .option-details {
+                width: 35vw;
+                .option {
+                    text-align: left;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 87em) {
+    .snippet {
+        .snippet-desc {
+            h2 {
+                @include title(2.5rem);
+            }
+            p {
+                @include para(1.2rem);
+                padding: 0 8rem;
+            }
+        }
+        .option-containter {
+            .option-details {
+                .option {
+                    margin-bottom: 2rem;
+                    h2 {
+                        @include title(1.8rem);
+                    }
+                    p {
+                        @include para(1.2rem);
+                        padding-right: 4rem;
+                    }
+                }
+            }
+        }
+    }
+}
