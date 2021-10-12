@@ -25,7 +25,7 @@ This is a solution to the [Clipboard landing page challenge on Frontend Mentor](
 
 ### Links
 
-- [Solution URL](https://github.com/vikrantmalla/Cipboard-landing-page.git)
+- [Solution URL](https://www.frontendmentor.io/profile/vikrantmalla)
 - [Live Server](https://cipboard-landing-page-hazel.vercel.app/)
 
 ### Built with
