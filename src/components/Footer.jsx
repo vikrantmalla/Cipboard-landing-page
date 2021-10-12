@@ -1,5 +1,4 @@
 import React from 'react';
-
 const Footer = () => {
     return (
         <>
@@ -8,23 +7,23 @@ const Footer = () => {
                     <img src="images/logo.svg" alt="footer_logo" />
                     <div className="footer_menu">
                         <ul className="footer_option">
-                            <li><a href="#">FAQs</a></li>
-                            <li><a href="#">Contact Us</a></li>
+                            <li>FAQs</li>
+                            <li>Contact Us</li>
                         </ul>
                         <ul className="footer_option">
-                            <li><a href="#">Privacy Policy</a></li>
-                            <li><a href="#">Press Kit</a></li>
+                            <li>Privacy Policy</li>
+                            <li>Press Kit</li>
                         </ul>
                         <ul className="footer_option">
-                            <li><a href="#">Install Guide</a></li>
+                            <li>Install Guide</li>
                         </ul>
                     </div>
                 </div>
 
                 <div className="social_media">
-                    <a href="#"><img src="images/icon-facebook.svg" /></a>
-                    <a href="#"><img src="images/icon-twitter.svg" /></a>
-                    <a href="#"><img src="images/icon-instagram.svg" /></a>
+                    <img src="images/icon-facebook.svg" alt="facebook" />
+                    <img src="images/icon-twitter.svg" alt="facebook" />
+                    <img src="images/icon-instagram.svg" alt="facebook" />
                 </div>
             </footer>
         </>
